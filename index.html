@@ -481,15 +481,100 @@
             </li>
           </ul>
         </div>
+        <div class="footer-wrap-newsletter">
+          <p class="footer-title-social">ZAPISZ SIĘ DO NEWSLETTERA</p>
+          <form class="footer-place-email">
+            <label>
+              <input
+                type="email"
+                name="email-footer"
+                placeholder="E-mail"
+                class="footer-input"
+              />
+            </label>
+            <button type="submit" class="footer-button">
+              Zapisz się
+              <svg class="footer-newsletter-icon">
+                <use href="./images/icons/icons_modal.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="icon">
-            <use href="./images/icons/icon_close.svg#icon-close"></use>
+            <use href="./images/icons/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form>
+          <h2 class="title-modal">Zostaw swoje dane w formularzu poniżej</h2>
+          <div class="modal-conteiner">
+            <label class="modal-name">
+              Imię
+              <input type="texts" name="name" class="modal-area" />
+              <svg class="icon-modal">
+                <use
+                  href="./images/icons/icons.svg#icon-icon-person-modal"
+                ></use>
+              </svg>
+            </label>
+            <label class="modal-name"
+              >Telefon
+              <input type="tel" name="phone_number" class="modal-area" />
+              <svg class="icon-modal">
+                <use
+                  href="./images/icons/icons.svg#icon-icon-phone-modal"
+                ></use>
+              </svg>
+            </label>
+            <label class="modal-name"
+              >Email
+              <input type="email" name="email" class="modal-area" />
+              <svg class="icon-modal">
+                <use
+                  href="./images/icons/icons.svg#icon-icon-email-modal"
+                ></use>
+              </svg>
+            </label>
+            <label class="modal-name"
+              >Komentarz
+              <textarea
+                name="comment"
+                rows="3"
+                placeholder="Wprowadź tekst"
+                class="modal-area comment"
+              ></textarea>
+            </label>
+          </div>
+          <div class="modal-agreement">
+            <label for="user_agreement" class="conteiner-agreement">
+              <input
+                type="checkbox"
+                class="modal-checkbox"
+                value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności"
+                id="user_agreement"
+              />
+              <svg class="icon-vector">
+                <use href="./images/icons/icons.svg#icon-Vector"></use>
+              </svg>
+              <p class="modal-agreement-text">
+                Oświadczam iż akceptuję
+                <a href="index.html" class="modal-link">Regulamin</a>
+                i
+                <a href="index.html" class="modal-link">
+                  Politykę Prywatności.
+                </a>
+              </p>
+            </label>
+          </div>
+          <div class="modal-conteiner-button">
+            <button type="submit" class="modal-button">Wyślij</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
